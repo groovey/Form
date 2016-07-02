@@ -6,6 +6,7 @@ use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use Silex\Application;
 use Silex\Api\BootableProviderInterface;
+use Groovey\Form\Form;
 
 class FormServiceProvider implements ServiceProviderInterface, BootableProviderInterface
 {
