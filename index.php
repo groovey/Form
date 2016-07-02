@@ -33,12 +33,12 @@ $form = new Form();
         <td><?= $form->checkbox('name', 'value'); ?></td>
     </tr>
     <tr>
-        <td>$form->radio('name', 'value');</td>
-        <td><?= $form->radio('name', 'value'); ?></td>
-    </tr>
-    <tr>
         <td>$form->checkbox('name', 'value', true);</td>
         <td><?= $form->checkbox('name', 'value', true); ?></td>
+    </tr>
+    <tr>
+        <td>$form->radio('name', 'value');</td>
+        <td><?= $form->radio('name', 'value'); ?></td>
     </tr>
     <tr>
         <td>$form->radio('name', 'value', true);</td>
