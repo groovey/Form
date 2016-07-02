@@ -33,7 +33,7 @@ use Groovey\Form\Form;
 $form = new Form();
 $form->text('test', 'Hello World');
 
-``
+```
 
 ## Form Elements
 
