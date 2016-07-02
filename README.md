@@ -44,8 +44,8 @@ $form->text('test', 'Hello World');
 - [Checkbox](#checkbox)
 - [Radio](#radio)
 - [Select](#select)
-- [Select Range](#selectrange)
-- [Select Month](#selectmonth)
+- [Select Range](#select_range)
+- [Select Month](#select_month)
 - [Submit](#submit)
 - [Token](#token)
 - [Label](#label)
@@ -87,10 +87,12 @@ $form->text('test', 'Hello World');
                 'Dogs' => array('spaniel' => 'Spaniel'),
             ));
 
+<div id='select_range'></div>
 ## Select Range
 
     $form->selectRange('number', 10, 20);
 
+<div id='select_month'></div>
 ## Select Month
 
     $form->selectMonth('month');
@@ -108,12 +110,13 @@ $form->text('test', 'Hello World');
     $form->label('email', 'E-Mail Address');
     $form->label('email', 'e-Mail Address', ['class' => 'awesome']);
 
+<div id='form_open'></div>
 ## Form Open
 
     $form->open(['url' => 'foo/bar']);
     $form->open(['url' => 'foo/bar', 'method' => 'put']);
 
 <div id='form_close'></div>
-## Form Close
+# Form Close
 
     $form->close();
