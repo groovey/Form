@@ -1,0 +1,22 @@
+{
+    "name": "groovey/form",
+    "description": "HTML form components.",
+    "license": "MIT",
+    "keywords": ["template", "generator"],
+    "authors": [
+        {
+            "name": "Harold Kim Cantil",
+            "email": "pokoot@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "~3.0",
+        "symfony/filesystem" : "~3.0",
+        "twig/twig" : "~1.24"
+    },
+    "autoload": {
+        "psr-4": {
+            "Groovey\\Form\\": "src"
+        }
+    }
+}
