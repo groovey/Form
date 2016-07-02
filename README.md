@@ -44,13 +44,13 @@ $form->text('test', 'Hello World');
 - [Checkbox](#checkbox)
 - [Radio](#radio)
 - [Select](#select)
-- [Select Range](#select range)
-- [Select Month](#select month)
+- [Select Range](#selectrange)
+- [Select Month](#selectmonth)
 - [Submit](#submit)
 - [Token](#token)
 - [Label](#label)
-- [Form Open](#form open)
-- [Form Close](#form close)
+- [Form Open](#form_open)
+- [Form Close](#form_close)
 
 ## Text
 
@@ -64,7 +64,7 @@ $form->text('test', 'Hello World');
 
     $form->email('$name');
 
-## Test
+## File
 
     $form->file('test');
 
@@ -103,7 +103,7 @@ $form->text('test', 'Hello World');
 
     $form->token();
 
-## Email
+## Label
 
     $form->label('email', 'E-Mail Address');
     $form->label('email', 'e-Mail Address', ['class' => 'awesome']);
