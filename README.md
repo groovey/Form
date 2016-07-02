@@ -113,6 +113,7 @@ $form->text('test', 'Hello World');
     $form->open(['url' => 'foo/bar']);
     $form->open(['url' => 'foo/bar', 'method' => 'put']);
 
+<div id='form_close'></div>
 ## Form Close
 
     $form->close();
