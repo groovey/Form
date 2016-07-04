@@ -1,6 +1,6 @@
-# Groovey Form
+# Form
 
-A Silex 2 service provider that uses HTML form components.
+Groovey Form Package
 
 ## Installation
 
