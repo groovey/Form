@@ -1,6 +1,6 @@
 {
     "name": "groovey/form",
-    "description": "A Silex 2 service provider that uses HTML form components.",
+    "description": "Groovey Form Package",
     "license": "MIT",
     "keywords": ["template", "generator"],
     "authors": [
