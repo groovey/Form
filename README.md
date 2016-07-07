@@ -6,10 +6,9 @@ Groovey Form Package
 
     $ composer require groovey/form
 
-## Setup
+## Usage
 
 ```php
-#!/usr/bin/env php
 <?php
 
 require_once __DIR__.'/vendor/autoload.php';
@@ -107,6 +106,6 @@ $app['form']->text('test', 'Hello World');
     $app['form']->open(['url' => 'foo/bar', 'method' => 'put']);
 
 <div id='form_close'></div>
-# Form Close
+## Form Close
 
     $app['form']->close();
