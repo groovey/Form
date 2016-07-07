@@ -25,16 +25,6 @@ $app->register(new FormServiceProvider());
 $app['form']->text('test', 'Hello World');
 ```
 
-## Standalone
-
-```php
-use Groovey\Form\Form;
-
-$form = new Form();
-$form->text('test', 'Hello World');
-
-```
-
 ## Form Elements
 
 - [Text](#text)
@@ -54,35 +44,35 @@ $form->text('test', 'Hello World');
 
 ## Text
 
-    $form->text('test', 'hello');</td>
+    $app['form']->text('test', 'hello');</td>
 
 ## Password
 
-    $form->password('password'); ?></td>
+    $app['form']->password('password'); ?></td>
 
 ## Email
 
-    $form->email('$name');
+    $app['form']->email('$name');
 
 ## File
 
-    $form->file('test');
+    $app['form']->file('test');
 
 ## Checkbox
 
-    $form->checkbox('name', 'value');
-    $form->checkbox('name', 'value', true);
+    $app['form']->checkbox('name', 'value');
+    $app['form']->checkbox('name', 'value', true);
 
 ## Radio
 
-    $form->radio('name', 'value');
-    $form->radio('name', 'value', true);
+    $app['form']->radio('name', 'value');
+    $app['form']->radio('name', 'value', true);
 
 ## Select
 
-    $form->select('size', array('L' => 'Large', 'S' => 'Small'));
-    $form->select('size', array('L' => 'Large', 'S' => 'Small'), 'S');
-    $form->select('animal', array(
+    $app['form']->select('size', array('L' => 'Large', 'S' => 'Small'));
+    $app['form']->select('size', array('L' => 'Large', 'S' => 'Small'), 'S');
+    $app['form']->select('animal', array(
                 'Cats' => array('leopard' => 'Leopard'),
                 'Dogs' => array('spaniel' => 'Spaniel'),
             ));
@@ -90,33 +80,33 @@ $form->text('test', 'Hello World');
 <div id='select_range'></div>
 ## Select Range
 
-    $form->selectRange('number', 10, 20);
+    $app['form']->selectRange('number', 10, 20);
 
 <div id='select_month'></div>
 ## Select Month
 
-    $form->selectMonth('month');
+    $app['form']->selectMonth('month');
 
 ## Submit
 
-    $form->submit('Click Me!');
+    $app['form']->submit('Click Me!');
 
 ## Token
 
-    $form->token();
+    $app['form']->token();
 
 ## Label
 
-    $form->label('email', 'E-Mail Address');
-    $form->label('email', 'e-Mail Address', ['class' => 'awesome']);
+    $app['form']->label('email', 'E-Mail Address');
+    $app['form']->label('email', 'e-Mail Address', ['class' => 'awesome']);
 
 <div id='form_open'></div>
 ## Form Open
 
-    $form->open(['url' => 'foo/bar']);
-    $form->open(['url' => 'foo/bar', 'method' => 'put']);
+    $app['form']->open(['url' => 'foo/bar']);
+    $app['form']->open(['url' => 'foo/bar', 'method' => 'put']);
 
 <div id='form_close'></div>
 # Form Close
 
-    $form->close();
+    $app['form']->close();
