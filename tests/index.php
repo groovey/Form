@@ -21,8 +21,8 @@ $form = new Form();
         <td><?= $form->password('password'); ?></td>
     </tr>
     <tr>
-        <td>$form->email('$name');</td>
-        <td><?= $form->email('$name'); ?></td>
+        <td>$form->email('name');</td>
+        <td><?= $form->email('name'); ?></td>
     </tr>
     <tr>
         <td>$form->file('test');</td>

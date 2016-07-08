@@ -31,9 +31,13 @@ class Html
         return $value ?: ucwords(str_replace('_', ' ', $name));
     }
 
-    public function input($type, $name, $value = null, $options = array())
+    public function input($type, $name, $value = null, $options = [])
     {
-        $merge   = compact('type', 'value', 'id');
+        if (!isset($options['id'])) {
+            $id = $name;
+        }
+
+        $merge   = compact('type', 'name', 'id', 'value');
         $options = array_merge($options, $merge);
 
         return '<input'.$this->attributes($options).'>';
@@ -54,7 +58,7 @@ class Html
             $selected = in_array($value, $selected) ? 'selected' : null;
         }
 
-        $options = array('value' => $value, 'selected' => $selected);
+        $options = ['value' => $value, 'selected' => $selected];
 
         return '<option'.$this->attributes($options).'>'.$display.'</option>';
     }
@@ -70,7 +74,7 @@ class Html
 
     protected function optionGroup($list, $label, $selected)
     {
-        $html = array();
+        $html = [];
         foreach ($list as $value => $display) {
             $html[] = $this->option($display, $value, $selected);
         }
