@@ -49,8 +49,8 @@ $form = new Form();
         <td><?= $form->select('size', ['L' => 'Large', 'S' => 'Small']); ?></td>
     </tr>
     <tr>
-        <td>$form->select('size', ['L' => 'Large', 'S' => 'Small'], 'S');</td>
-        <td><?= $form->select('size', ['L' => 'Large', 'S' => 'Small'], 'S'); ?></td>
+        <td>$form->select('size', ['L' => 'Large', 'S' => 'Small'], 'L');</td>
+        <td><?= $form->select('size', ['L' => 'Large', 'S' => 'Small'], 'L'); ?></td>
     </tr>
     <tr>
         <td>

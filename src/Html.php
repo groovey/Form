@@ -56,6 +56,8 @@ class Html
     {
         if (is_array($selected)) {
             $selected = in_array($value, $selected) ? 'selected' : null;
+        } else {
+            $selected = ($value == $selected) ? 'selected' : null;
         }
 
         $options = ['value' => $value, 'selected' => $selected];
