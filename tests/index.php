@@ -45,26 +45,26 @@ $form = new Form();
         <td><?= $form->radio('name', 'value', true); ?></td>
     </tr>
     <tr>
-        <td>$form->select('size', array('L' => 'Large', 'S' => 'Small'));</td>
-        <td><?= $form->select('size', array('L' => 'Large', 'S' => 'Small')); ?></td>
+        <td>$form->select('size', ['L' => 'Large', 'S' => 'Small']);</td>
+        <td><?= $form->select('size', ['L' => 'Large', 'S' => 'Small']); ?></td>
     </tr>
     <tr>
-        <td>$form->select('size', array('L' => 'Large', 'S' => 'Small'), 'S');</td>
-        <td><?= $form->select('size', array('L' => 'Large', 'S' => 'Small'), 'S'); ?></td>
+        <td>$form->select('size', ['L' => 'Large', 'S' => 'Small'], 'S');</td>
+        <td><?= $form->select('size', ['L' => 'Large', 'S' => 'Small'], 'S'); ?></td>
     </tr>
     <tr>
         <td>
-            $form->select('animal', array(
-                'Cats' => array('leopard' => 'Leopard'),
-                'Dogs' => array('spaniel' => 'Spaniel'),
-            ));
+            $form->select('animal', [
+                    'Cats' => ['leopard' => 'Leopard'],
+                    'Dogs' => ['spaniel' => 'Spaniel'],
+                ]);
         </td>
         <td>
             <?=
-            $form->select('animal', array(
-                'Cats' => array('leopard' => 'Leopard'),
-                'Dogs' => array('spaniel' => 'Spaniel'),
-            ));
+            $form->select('animal', [
+                    'Cats' => ['leopard' => 'Leopard'],
+                    'Dogs' => ['spaniel' => 'Spaniel'],
+                ]);
             ?>
         </td>
     </tr>
@@ -89,8 +89,8 @@ $form = new Form();
         <td><?= $form->label('email', 'E-Mail Address');?></td>
     </tr>
     <tr>
-        <td>$form->label('email', 'e-Mail Address', array('class' => 'awesome'));</td>
-        <td><?= $form->label('email', 'e-Mail Address', array('class' => 'awesome'));?></td>
+        <td>$form->label('email', 'e-Mail Address', ['class' => 'awesome']);</td>
+        <td><?= $form->label('email', 'e-Mail Address', ['class' => 'awesome']);?></td>
     </tr>
 
     <tr>
@@ -103,10 +103,10 @@ $form = new Form();
         </td>
     </tr>
     <tr>
-        <td>$form->open(array('url' => 'foo/bar', 'method' => 'put'));</td>
+        <td>$form->open(['url' => 'foo/bar', 'method' => 'put')];</td>
         <td>
             <?php
-                echo $form->open(array('url' => 'foo/bar', 'method' => 'put'));
+                echo $form->open(['url' => 'foo/bar', 'method' => 'put']);
                 echo $form->close();
             ?>
         </td>
