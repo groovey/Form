@@ -2,7 +2,7 @@
     "name": "groovey/form",
     "description": "Groovey Form Package",
     "license": "MIT",
-    "keywords": ["groovey", "silex"],
+    "keywords": ["silex", "groovey"],
     "authors": [
         {
             "name": "Harold Kim Cantil",
